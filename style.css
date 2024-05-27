@@ -1,0 +1,1533 @@
+/* start reset style css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: 400;
+}
+a{
+    text-decoration: none; /* убираю подчеркивание у ссылок */
+}
+.page{
+    width: 1900px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* end reset style css */
+
+
+
+/* start HEADER ---------------------------------------------------------------------------------*/
+
+.conteiner{
+    width: 1440px;
+    margin: auto;
+    margin-left: 240px;
+}
+
+header.conteiner{
+    font-family: 'Edmondsans', sans-serif;                                      
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+header > a{
+    display: flex;
+    align-items: center;
+}
+header .logo{   /* задаю размеры логотипа */
+    width: 28px;
+    height: 30px;
+}
+
+header ul{  /* превращаем шапку в блок*/
+    display: flex;
+}
+
+.text{  /* форматируем текст заголовка - размер, толщина длина итд*/
+    font-size: 23px;
+    font-weight: 700;
+    width: 150px;
+    color: black;
+}
+
+.conteiner .one{ /* форматируем заголовки шапки по длине размеру толщине, ставим авоматические отступы */
+    width: 668px;
+    font-size: 18px;
+    font-weight: 410;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteiner .select-conteiner .select-box{
+    font-family: 'Edmondsans', sans-serif;  
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    font-weight: 410;
+    line-height: 24px;
+    text-align: left;
+    color: #323232;
+}
+.first .select-box{
+    width: 70px;
+    height: 24px;
+    gap: 10px;
+}
+.second .select-box{
+    width: 93px;
+    height: 24px;
+    gap: 10px;   
+}
+
+.conteiner .two{  /*все также*/
+    float: right;
+    justify-content: space-between;
+    width: 219px;
+    font-size: 18px;
+    font-weight: 410;
+}
+
+header ul li a{
+    color: black;
+}
+
+header ul:not(.two) li a:hover{
+    color:#197BFF;
+}
+
+header ul.two a{
+    color: #868686;
+}
+
+header ul li.btnone a:hover{
+    transition: all 0,3s;
+    color: #00c080dc;
+}
+header ul li.btntwo a{
+    color: white;
+    background: #01CE87;
+    border-radius: 5px;
+    border: 1px solid #01CE87;
+    transition: all 0,3s ;
+    padding: 15px 40px ; /*отступы от текста тип как рамка, ВСЕ В КОДЕ ПОСЧИТАНЫ ДЛЯ ОТЧЕТА ПРАВИЛЬНО*/
+}
+header ul li.btntwo a:hover{
+    padding: 15px 40px ;
+    background: rgb(211, 246, 238);
+    color:#197BFF;
+    border: 1px solid white;
+}
+/* ena HEADER ------------------------------------------------------------------------------------------*/
+
+
+.hero {
+    box-sizing: border-box;
+    display: flex;
+}
+
+.hero--info{      
+         /* указываю размещения текста на сайте*/
+         
+
+    font-family: 'Edmondsans', sans-serif;
+    margin-left: 240px;
+    width: 708px;
+    height: 447px;
+    margin-top: 167px;
+}
+
+.logo2{ /* соединяю в стороку красную точку и текст, указываю ширину*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 282px;
+}
+
+.red{
+    width: 15px;
+    height: 15px;
+    margin-top: -1.5px;
+}
+
+.hero h2{ /* форматирование красного текст*/
+    font-size: 12px;
+    font-weight: 410;
+    line-height: 15.6px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color: #FF6854;
+}
+
+.hero h1{  /* форматирование заголовка*/
+    margin-top: 10px;
+    width: 708px;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 79.2px;
+    text-align: left;
+}
+
+.hero p{ /* форматирование текста под заголовком*/
+    
+    color: #8A909A;
+    width: 675px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    }
+
+.logo3{ /* соединяю в стороку кнопку и просмотр видео, указываю ширину и отступ сверху*/
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 349px;
+    height: 60px;
+    margin-top: 50px;
+    }
+
+.hero--info .btn{ /*форматирую кнопку*/
+    width: 220px;
+    height: 60px;
+    border: 0; /* убираю огранку у кнопки*/
+    background: #197BFF;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px;
+}
+.hero--info .btn:hover{
+    cursor: pointer;
+    transform: scale(1.1); /* кнопка будет увеличиваться на 10%*/
+    background: #1461c6;
+}
+
+
+.watch{ /* соединяю фото видео и текст*/
+    width: 105px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 19px 0px;
+}
+
+.watch a{ /* форматирую текст ширину и толщину*/
+    font-size: 14px;
+    font-weight: 410;
+    line-height: 20.2px;
+    text-align: left;
+    color: #8A909A;
+}
+/* end HERO--INFO -------------------------------------------------------------------------------------------------------------------------*/
+
+.man{
+    width: 548.61px;
+    height: 668px;
+    margin-left: 190px;
+}
+
+.rating{
+    width: 158px;
+    height: 154px;
+    margin-top: 150px;
+    margin-left: -77px;
+    border-radius: 20px;
+    box-shadow: 0px 40px 80px 0px #3F45FD40;
+}
+
+.white{
+    width: 229px;
+    height: 305px;
+    border-radius: 20px;
+    box-shadow: 0px 40px 80px 0px #00000033;
+    margin-left: -679px;
+    margin-top: 385px
+}
+.right{
+    position: relative;
+}
+.right .right{
+    position: absolute;
+    width: 26px;
+    height: 262px;
+    top: -60px;
+    left: 1744px;
+}
+
+/* start FOTO ----------------------------------------------------------------------------------*/
+.dis .right{
+    
+    width: 26px;
+    height: 262px;
+   
+}
+.dis{ /* двигаю фото программ куда можно подключиться*/
+    width: 1440.03px;
+    height: 103px;
+    margin-left: 240px;
+    margin-top: 100px;
+}
+.dis p{ /* данные для текста над фото*/
+    font-family: 'Edmondsans', sans-serif;  
+    width: 541px;
+    height: 32px;
+    color: #B3B3B3;
+    margin-left: 450px;
+    font-size: 22px;
+    font-weight: 410;
+    text-align: center;
+}
+.dis p span{
+    font-family: 'Edmondsans', sans-serif; 
+    font-size: 22px;
+    font-weight: 410;
+    line-height: 31.75px;
+    text-align: center;
+    color: #FF6854;
+}
+
+.foto ul{ /* располагаю фото в ряд, делаю расстояние и размры*/
+    display: flex; 
+    justify-content: space-between;
+    width: 1,440px;
+    height: 41px;
+    margin-top: 30px;
+}
+/* end FOTO -------------------------------------------------------------------------------------*/
+
+
+
+/* начинаю вторую страницу*/
+.twopage{
+    margin-top: 105px;
+    margin-left: 240px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.twopage img.woman{
+    width: 610px;
+    height: 646px;
+}
+.twopage .text{
+    font-family: 'Edmondsans', sans-serif; 
+    width: 675px;
+    height: 596px;
+    margin-right: 252px;
+}
+.twopage .text h2{
+    color: #FF6854;
+    font-size: 12px;
+    font-weight: 410;
+    line-height: 15.6px;
+    letter-spacing: 0.2em;
+    text-align: left;
+}
+.twopage .text h1{
+    margin-top: 10px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: left;
+}
+
+.twopage .text .v{ /* располагаю фото и текст в строку и равное расстояние*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 489px;
+    height: 81px;
+    color: #8A909A;  
+    margin-top: 25px;
+}
+
+.twopage .text .v img{ /* задаю размеры для галочки*/
+    width: 14px;
+    height: 12px;
+    margin-top: 8px;
+}
+
+.twopage .text .b{ /* располагаю фото и текст в строку и равное расстояние*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 489px;
+    height: 81px;
+    color: #8A909A;
+    margin-top: 20px;
+}
+
+.twopage .text .b img{
+    width: 14px;
+    height: 12px;
+    margin-top: 8px;
+}
+
+.twopage .text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    width: 464px;
+    height: 81px;
+}
+
+/*------------------ video -------------------*/
+.twopage .text .video{  /* размещаю текст с видео относительно друг друга*/
+    margin-top: 30px;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    width: 530px;
+    height: 97px;
+}
+
+
+.twopage .text .video .vi{ /* изменяю размеры фото и делаю затемнение вокруг*/
+    border-radius: 30px;
+    width: 97px;
+    height: 97px;
+    box-shadow: 0px 0px 15px 10px  rgba(112,144,176,0.2);;
+}
+
+.greygreen{ /* изменяю цвет и отступ для всего текста вместе*/
+    color: #585F5F;
+    margin-left: 25px;
+}
+
+.twopage .text .video p{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px;
+    text-align: left;
+    width: 408px;
+    height: 46px;
+    margin-bottom: 22px;
+}
+
+.twopage .text .video h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    width: 312px;
+    height: 33px;
+}
+
+.twopage .text .video h3 span{ /* изменяю текст и толщину у выбарнной части текста */
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    color: #01CE87;
+    margin-left: 20px;
+    width: 136px;
+    height: 18px;
+}
+
+.twopage .text .video .proig{ /* размещаю кнопку проигрыватель на фото видео*/
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    top: 407px;
+    left: 775px;
+}
+
+.twopage .text a{ /* делаю ссылку в виде кнопки*/
+    margin-top: 60px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background: #197BFF;
+    border-radius: 5px;
+    border: 1px solid #197BFF;
+    padding: 20px 34.77px;
+}
+
+.twopage .text a:hover{
+    transform: scale(1.1); /* кнопка будет увеличиваться на 10%*/
+}
+
+/* END VIDEO FOTO ------------------------------------------------------------------------------------------------*/
+
+/* START BLOCK 6x общее!!!!! ---------------------------------------------------------------------------------------------------------*/
+
+.threepage{ /*странице задаю текст, размеры и отступы*/
+    font-family: 'Edmondsans', sans-serif; 
+    width: 1440px;
+    height: 551px;
+    margin-left: 240px;
+    margin-top: 130px;
+}
+
+.threepage .main{ /*своим двум блокам задаю размеры*/
+    width: 1440px;
+    height: 263px;
+    display: flex;
+    flex-direction: column;
+}
+
+.threepage .onefour ul{ /*контейнер ul выравнивает li (4 первые элемента)*/
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.threepage .twofour ul{ /*также как и сверху*/
+    display: flex;  
+    flex-direction: row;
+}
+
+
+.threepage .onefour ul li{ /*задаю рамезры для блока первого контейнера*/
+    width: 342px;
+    height: 263px;
+    border: 0.5px solid #e7e7e7;
+    border-radius: 5px;
+}
+
+.threepage .twofour ul li{ /*задаю рамезры для блока второго контейнера*/
+    margin-top: 25px;
+    width: 342px;
+    height: 263px;
+    border: 0.5px solid #e7e7e7;
+    border-radius: 5px;
+}
+
+.twofour ul li.seven{
+    border: none;
+    width: 586px;
+    height: 233px;
+}
+
+.threepage ul img{ /*задаем картинкам размеры*/
+    width: 50px;
+    height: 50px;
+}
+
+.threepage .onefour ul li{ /* в блоках задаю чтоб карттинки и текст были в колонку*/
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px
+}
+.threepage .twofour ul li{ /* в блоках задаю чтоб карттинки и текст были в колонку*/
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px
+}
+
+.threepage .main h1{ 
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+}
+
+.threepage .main p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #858585;
+ }
+
+
+/* START BLOCK 6x для каждого отдельно!!!!! ---------------------------------------------------------------------------------------------------------*/
+.threepage .twofour .six{
+    margin-left: 25px;
+}
+  
+.threepage .twofour .seven{
+    margin-left: 60px;
+}
+
+.threepage .twofour .seven h5{ /* задаю данные для текста*/
+    color: #FF6854;
+    font-size: 12px;
+    font-weight: 410;
+    margin-top: -20px;
+    width: 163px;
+    height: 16px;
+    line-height: 15.6px;
+    letter-spacing: 0.2em;
+}
+
+.threepage .twofour .seven h2{/* задаю данные для текста*/
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+.threepage .twofour .seven h2 span{ /* задаю данные для текста который другого цветф*/
+    color: #197BFF;  
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+}
+.threepage .twofour .seven p{ /* задаю данные для текста*/
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #8A909A;
+    width: 586px;
+    height: 81px;
+}
+/*----------------делаю при наведении мышки----------------------*/
+
+.threepage .onefour ul li:hover{
+    border: 0.5px solid #197BFF;
+    box-shadow: 0px 15px 20px 15px  rgba(112,144,176,0.2);
+}
+
+.threepage .twofour ul li:not(.seven):hover{
+    border: 0.5px solid #197BFF;
+    box-shadow: 0px 15px 20px 15px  rgba(112,144,176,0.2);
+}
+
+/* НАЧАЛО 4 СТТАНИЦЫ, ГДЕ СИНЯЯ ФОТО С ЧИСЛАМИ--------------------------------------------------------------------------------------*/
+
+.fourpage{
+    font-family: 'Edmondsans', sans-serif; 
+    margin-top: 110px;
+    width: 1900px;
+    height: 354px;
+}
+             
+.fourpage .numbers{ /*выравниваю числа и текст в строку*/
+    color: white;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -235px;
+    margin-left: 261px;
+    margin-right: 267px;
+}
+
+.fourpage .numbers h2{ /*задаю стиль для чисел*/
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 88.56px;
+    text-align: center;
+}
+
+.fourpage .numbers p{ /*задаю стиль для текста*/
+    color: #D1E5FF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+
+/*НАЧАЛО ГДЕ 4 ГАЛОЧКИ И ВИДЕО 5 сттанинца---------------------------------------------------------------------------*/
+
+.fivepage{ /*задаю размеры для 5 страницы*/
+    font-family: 'Edmondsans', sans-serif; 
+    margin-top: 110px;
+    width: 1440px;
+    height: 500px;
+    margin-left: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fivepage .right{
+    position: relative;
+}
+
+.fivepage .right .manwoman{ /*задаю размеры фото мужчинаженщина*/
+    width: 707px;
+    height: 500px;
+    margin-left: 100px;
+}
+.fivepage .right .videotwo{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    width: 46px;
+    top: 226px;
+    left: 73px;
+}
+.fivepage .right .videotwo:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+.fourchek{ /*располагаю блоки по два в колонки и задаю размеры*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 643px;
+    height: 276px;
+}
+
+.fourchek img{
+    width: 26px;
+    height: 26px;
+}
+
+
+
+.fourchek .onetwo{ /*первые два текста располагаю в линию*/
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    width: 643px;
+}
+.fourchek .one{ /*располагаю текст и фото в 1 блоке*/
+    display: flex;
+    flex-direction: column;
+    width: 292px;
+    height: 101px;
+}
+
+.fourchek .two{ /*располагаю текст и фото в 2 блоке*/
+    display: flex;
+    flex-direction: column;
+    width: 292px;
+    height: 101px;
+}
+.fourchek .three{  /*располагаю текст и фото в 3 блоке*/
+    display: flex;
+    flex-direction: column;
+    width: 292px;
+    height: 101px;
+}
+.fourchek .four{ /*располагаю текст и фото в 4 блоке*/
+    display: flex;
+    flex-direction: column;
+    width: 292px;
+    height: 101px;
+}
+
+.fourchek .fototext{ /*галочки и заголовки в блоках располагаю в линия*/
+    display: flex;
+    flex-direction: row;
+}
+
+.fourchek .twotwo{ /*вторые два текста располагаю в линию*/
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fivepage .left h2{ /*задаю размеры и марджины для заголовков*/
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+}
+
+.fivepage .left h5{ /*задаю размеры и марджины для текста*/
+    margin-left: 46px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #858585;
+    width: 249px;
+    height: 60px;
+}
+
+ .left h4{
+    width: 120px;
+    height: 16px;
+    font-size: 11px;
+    font-weight: 410;
+    line-height: 15.6px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color: #FF6854;
+}
+
+.left h1{
+    width: 343px;
+    height: 106px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+
+/* 6 СТРАНИЦА С КАРТОЧКАМИ ------------------------------------------------------------------------------------*/
+
+.sixpage{ /*задаю размеры блока и шрифт*/
+    font-family: 'Edmondsans', sans-serif; 
+    margin-left: 240px;
+    margin-top: 130px;
+    width: 1441px;
+    height: 813px;
+}
+
+.sixpage .row{ /*делаю карточки в строку*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sixpage .heading{ /*выравниваю заголовок по центру с размерами*/
+    margin-left: 342px;
+    width: 755px;
+    height: 155px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sixpage .heading h5{
+    color: #FF6854;
+    font-size: 12px;
+    font-weight: 410;
+    line-height: 15.6px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.sixpage .heading h1{
+    margin-top: 10px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+}
+.sixpage .heading p{
+    margin-top: 20px;
+    text-align: center;
+    color: #8A909A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+}
+
+.sixpage .row{ /*закрепляю при абсолютной позиции и отступаю сверху*/
+    margin-top: 40px
+}
+
+
+.sixpage .row h5{ /*задаю стиль для подзаголовка ДЛЯ ВСЕХ КАРТОЧЕК*/
+    font-size: 14px;
+    font-weight: 410;
+    color: #858585;
+    width: 109px;
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+}
+.sixpage .row ul{
+    margin-top: 30px;
+    margin-left: 33px;
+    width: 202px;
+    height: 280px;
+
+}
+.sixpage .row ul li{ /*для списка ставлю точки*/
+    color: #858585;
+    font-family: "DM Sans", sans-serif;
+    list-style-image: url(images/point.png);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.sixpage .row ul li.black{
+    color: #252525;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+}
+
+
+
+/*НАЧАЛО ФОРМАТИРОВАНИЯ КАРТОЧКИ 1*/
+
+
+.row .cardone{  /*задаю размеры карточке, обводку и паддинги*/
+    width: 455px;
+    height: 620px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-top: 27px;
+    padding-bottom: 30px;
+    box-shadow: 0px 100px 100px 0px #0000001A;
+    margin-bottom: 300px;
+}
+.row .cardone .line{ /*располагаю числа и флажок в строку*/
+    display: flex;
+    flex-direction: row;
+}
+
+.row .cardone .line svg{ /*располагаю флажок*/
+    margin-top: 33px;
+    margin-left: 115px;
+    width: 155px;
+    height: 43px;
+}
+
+.row .cardone .line h3{ /*задаю стиль тексту который будет на флаге и двигаю*/
+    margin-top: -40px;
+    margin-left: 155px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #01CE87;
+    width: 95px;
+    height: 25px;
+}
+
+.row .cardone .line h2{ /*стиль цене*/
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.sixpage .row .line h2 sup{
+    font-size: 50px;
+}
+
+.row .cardone a{ /* делаю ссылку в виде кнопки*/
+    margin-top: 50px;
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #197BFF;
+    border-radius: 5px;
+    border: 1px solid #197BFF;
+    width: 220px;
+    height: 55px;
+    padding-left: 110px;
+    padding-top: 15px;
+}
+
+
+/*НАЧАЛО ФОРМАТИРОВАНИЯ КАРТОЧКИ 2*/
+
+
+.row .cardtwo{  /*задаю размеры карточке, обводку и паддинги*/
+    width: 455px;
+    height: 620px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-top: 27px;
+    padding-bottom: 30px;
+    box-shadow: 0px 100px 100px 0px #0000001A;
+    margin-bottom: 300px;
+
+
+}
+.row .cardtwo .line{ /*располагаю числа и флажок в строку*/
+    display: flex;
+    flex-direction: row;
+}
+
+.row .cardtwo .line svg{ /*располагаю флажок*/
+    margin-top: 33px;
+    margin-left: 77px;
+    width: 155px;
+    height: 43px;
+}
+
+.row .cardtwo .line h3{ /*задаю стиль тексту который будет на флаге и двигаю*/
+    margin-top: -40px;
+    margin-left: 133px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #01CE87;
+    width: 95px;
+    height: 25px;
+}
+
+.row .cardtwo .line h2{ /*стиль цене*/
+    font-size: 80px;
+    font-weight: 700;
+}
+
+
+.row .cardtwo a{ /* делаю ссылку в виде кнопки*/
+    margin-top: 50px;
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #197BFF;
+    border-radius: 5px;
+    border: 1px solid #197BFF;
+    width: 220px;
+    height: 55px;
+    padding-left: 110px;
+    padding-top: 15px;
+}
+
+/*НАЧАЛО ФОРМАТИРОВАНИЯ КАРТОЧКИ 3*/
+
+.row .cardthree{  /*задаю размеры карточке, обводку и паддинги*/
+    width: 455px;
+    height: 620px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-top: 27px;
+    padding-bottom: 30px;
+    box-shadow: 0px 100px 100px 0px #0000001A;
+    margin-bottom: 300px;
+}
+
+.row .cardthree .line{ /*располагаю числа и флажок в строку*/
+    display: flex;
+    flex-direction: row;
+}
+
+.row .cardthree .line svg{ /*располагаю флажок*/
+    margin-top: 33px;
+    margin-left: 128px;
+    width: 155px;
+    height: 43px;
+}
+
+.row .cardthree .line h3{ /*задаю стиль тексту который будет на флаге и двигаю*/
+    margin-top: -40px;
+    margin-left: 157px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #01CE87;
+    width: 111px;
+    height: 25px;
+}
+
+.row .cardthree .line h2{ /*стиль цене*/
+    font-size: 80px;
+    font-weight: 700;
+}
+
+
+.row .cardthree a{ /* делаю ссылку в виде кнопки*/
+    margin-top: 50px;
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #197BFF;
+    border-radius: 5px;
+    border: 1px solid #197BFF;
+    width: 220px;
+    height: 55px;
+    padding-left: 110px;
+    padding-top: 15px;
+}
+
+/*ДЕЛАЮ АНИМАЦИЮ ПРИ НАВЕДЕНИИ МЫШКОЙ--------------------------------------------------*/
+
+.row .cardone:hover,
+.row .cardtwo:hover,
+.row .cardthree:hover{
+    border: 1px solid #01CE87;
+    box-shadow: 0px 100px 100px 0px #0066FF26;
+}
+
+.row .cardone:hover a,
+.row .cardtwo:hover a, /*заливаю фон кнопки*/
+.row .cardthree:hover a{
+    background: #197BFF;
+    color: white;
+    padding-top: 15px;
+    padding-left: 65px;
+}
+
+.row .cardthree:hover h2,
+.row .cardtwo:hover h2,
+.row .cardone:hover h2{ /*стиль цене*/
+    color: #197BFF;
+}
+
+.row .cardthree:hover, /*изменяю цвет флага */
+.row .cardtwo:hover,
+.row .cardone:hover{
+svg path{
+        fill: #01CE87;
+        opacity: 1;
+    }
+}
+
+.row .cardthree:hover h3, 
+.row .cardtwo:hover h3,
+.row .cardone:hover h3{
+    color: white;
+}
+
+/*НАЧАЛО 7 СТРАНИЦА -------------------------------------------------------------*/
+
+.sevenpage{ /*задаю стиль 7 странице*/
+    font-family: 'Edmondsans', sans-serif; 
+    margin-top: 130px;
+    width: 1920px;
+    height: 400.01px;
+}
+
+.sevenpage h1{ /*задаю стиль заголовку и располложение*/
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: left;
+    margin-top: -258px;
+    margin-left: 240px;
+    width: 611px;
+    height: 106px;
+}
+
+.sevenpage h1 span{
+    color: #197BFF;
+}
+
+.sevenpage .input-text{ /*изменяю форму для email*/
+    width: 526px;
+    height: 65px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #8A909A;
+    padding-left: 20px;
+}
+
+.sevenpage .input-btn{ /*изменяю кнопку*/
+    cursor: pointer;
+    width: 167px;
+    height: 65px;
+    background: #197BFF;
+    border: 1px solid #197BFF;
+    border-radius: 5px;
+    color: white;
+    margin-left: 10px;
+}
+
+.sevenpage form{ /*двигаю всю форму */
+    margin-left: 972px;
+    margin-top: -77px;
+}
+
+
+/*НАЧАЛО 8 СТРАНИЦА -------------------------------------------------------------*/
+
+
+.eightpage{ /*указываю стиль и расположение для 8 страницы */
+    font-family: 'Edmondsans', sans-serif; 
+    width: 100%;
+    height: 579px;
+    margin-top: 111px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/circle.png);
+    background-repeat: no-repeat;
+    background-position: 770px bottom;
+    margin-left: -10px;
+}
+
+/* .eightpage .swiper-slide  {
+
+} */
+
+.chart{ /*указываю размеры и расположение для графика*/
+    width: 693.42px;
+    height: 480px;
+}
+
+.eightpage .text{ /*указываю размеры для текста слева*/
+    width: 679px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -90px;
+}
+
+.eightpage h5{
+    font-size: 12px;
+    font-weight: 410;
+    line-height: 15.6px;
+    letter-spacing: 0.2em;  
+    color: #FF6854;
+}
+
+.eightpage h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: left;
+    width: 675px;
+    height: 106px;
+    margin-top: 10px;
+}
+
+.eightpage .texttwo{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    width: 586px;
+    height: 216px;
+    margin-top: 20px;
+    color: #8A909A;
+}
+
+.eightpage .texttwo .two{
+    margin-top: 30px;
+}
+
+.eightpage .text img{ /*указываю размеры для фото слайдеров*/
+    width: 232px;
+    height: 114px;
+    margin-left: -32px;
+    margin-top: 10px;
+}
+
+/*НАЧАЛО 9 СТРАНИЦА --------------------------------------------------------------------------------*/
+
+.ninepage{ /*задаю стиль для 9 страницы*/
+    font-family: 'Edmondsans', sans-serif; 
+    display: flex;
+    flex-direction: column;
+}
+.ninepage .BACK{ /*размеры фона*/
+    width: 1920px;
+    height: 794px;
+    margin-top: 110px;
+}
+.ninepage .heading{ /*располагаю текст заголовка в колонку и задаю размеры*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 755px;
+    height: 206px;
+    margin-top: -700px;
+    margin-left: 583px;
+}
+
+.ninepage .heading h5{ /*задаю стиль и размры для первого текста заголовка*/
+    color: #FF6854;
+    font-size: 12px;
+    font-weight: 410;
+    line-height: 15.6px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    width: 196px;
+    height: 16px;
+}
+
+.ninepage .heading h1{ /*задаю стиль и рамзеры для второго текста заголовка*/
+    margin-top: 10px; 
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: center;
+    color: black;
+    width: 619px;
+    height: 106px;
+}
+
+.ninepage .heading p{ /*задаю стиль и рамзеры для третьего текста заголовка*/
+    margin-top: 20px;
+    text-align: center;
+    color: #8A909A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+}
+
+.ninepage .card{ /*располагаю карточки в линию*/
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 240px;
+    width: 1500px;
+    height: 270px;
+}
+
+.ninepage .swiper-cards {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.ninepage .swiper-pagination-bullet {
+   
+    width: 12px !important;
+    height: 12px !important;
+    stroke-width: 3px;
+    background-color: #908e8e !important;
+}
+
+.ninepage .swiper-pagination-bullet-active {
+    background-color: #197BFF !important;
+}
+
+.ninepage .swiper-slide {
+    display: flex !important;
+    justify-content: center;
+}
+
+.ninepage .swiper-cards-pagination {
+    justify-content: center;
+    display: flex !important;
+}
+
+.ninepage .card h1{ /*задаю шрифт кавычкам и цвет*/
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #197BFF;
+}
+
+.ninepage .card p.k{ /*задаю стиль для подзаголовка у карточек*/
+    font-size: 12px;
+    font-weight: 400;
+    color: #858585;
+    margin-top: -20px;
+    line-height: 20px;
+    text-align: left;   
+}
+
+.ninepage h2{ /*задаю стиль для имен у фото*/
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+
+}
+.ninepage .card .row p{ /*задаю стиль для описаний под именами*/
+    font-size: 12px;
+    font-weight: 400;
+    color: #858585;
+    margin-top: 1px;
+}
+
+.ninepage .card .row{ /*делаю фото и текст в линию*/
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.ninepage .card .column{ /*располагаю два текста около фото в колонку*/
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.ninepage .cardone{ /*форматирую 1 карточку*/
+    width: 342px;
+    height: 255px;
+    background: white;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ninepage .cardtwo{ /*форматирую 2 карточку*/
+    width: 342px;
+    height: 255px;
+    background: white;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ninepage .cardthree{ /*форматирую 3 карточку*/
+    width: 342px;
+    height: 255px;
+    background: white;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ninepage .cardfour{ /*форматирую 4 карточку*/
+    width: 342px;
+    height: 255px;
+    background: white;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+   
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ninepage img{ 
+    width: 41px;
+    height: 41px;
+}
+
+
+/*НАЧАЛО 10 СТРАНИЦЫ -------------------------------------------------------------------------------*/
+.tenpage{ /*форматирую 10 страницу-*/
+    font-family: 'Edmondsans', sans-serif;
+    margin-top: 220px;
+    width: 1552px;
+    height: 326px;
+    margin-left: 184px;
+    background-image: url(images/linegrey.png);
+    background-repeat: no-repeat;
+    background-position: 0px 280px
+}
+.tenpage .row{ /*делаю чтоб колонки были в ряд и га равном расстоянии*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tenpage .columnone p{ /*изменяю подзаголовки*/
+font-size: 16px;
+font-weight: 700;
+line-height: 31px;
+text-align: left;
+width: 366px;
+height: 93px;
+color: #777777;
+margin-top: 24px;
+}
+
+.tenpage ul li{ /*изменяю подпкнуты колокни*/
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36.8px;
+    text-align: left;
+    color: #9EA3A6;
+}
+.tenpage ul li.main{ /*изменяю заголовки колонки*/
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: left;
+    color: black;
+}
+.tenpage .row .start img{ /*изменяю картинку которая для кнопки*/
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 4px 55px 0px #197BFF33;
+    margin-top: -10px;
+}
+
+.columnfour{ /*двигаю 4 колонку влево*/
+    margin-left: -100px;
+}
+
+.tenpage h5{ /*изменяю текст внизу*/
+    color:  #777777;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: left;
+    width: 186px;
+    height: 31px;
+    margin-top: 70px;
+}
+
+
+.card-info { /*изменяю все карточки по центре*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.big-cards-container .big-cards-swiper {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+}
+
+.pagination-big-cards {
+    display: flex;
+    margin-left: 260px;
+    width: 100%;
+    gap: 50px;
+}
+
+.pagination-big-cards button {
+    transition: 0.3s ease;
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination-big-cards button:hover svg path {
+    transition: 0.3s ease;
+    fill-opacity:1
+}
+
+.pagination-big-cards svg path { /*делаю плавное переключение кнопок*/
+    transition: 0.3s ease;
+}
+
+.number { /*размеры для чисел внутри картинок*/
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 104%;
+    color: #fff;
+    position: absolute;
+    top: 22%;
+    left: 35%;
+}
+
+.active svg path {
+    fill-opacity: 1;
+}
