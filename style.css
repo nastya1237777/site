@@ -1537,15 +1537,19 @@ margin-top: 24px;
         width: 384px;
         margin: 0 auto;
     }
+    header.conteiner{
+        font-family: 'Edmondsans', sans-serif;                                      
+        margin-bottom: 30px;
+        display: flex;
+        padding: 10px 0;
+        align-items: center;
+    }
+
     .conteiner{
         width: 384px;
         margin: auto;
     }
-    .hero--info{     /* указываю размещения текста на сайте*/
-        font-family: 'Edmondsans', sans-serif;
-        width: 384px;
-        height: 100px;
-    }
+   
     header .logo{   /* задаю размеры логотипа */
         width: 20px;
         height: 18px;
@@ -1575,76 +1579,59 @@ margin-top: 24px;
         font-family: 'Edmondsans', sans-serif;  
         cursor: pointer;
         border: none;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 100;
-        line-height: 24px;
+        line-height: 10px;
         text-align: left;
         color: #323232;
     }
-   
-    
+    .first .select-box{
+        width: 30px;
+        gap: 10px;
+    }
+    .second .select-box{
+        width: 30px;
+        gap: 10px;   
+    }
     
     .conteiner .two{  /*все также*/
         float: right;
         justify-content: space-between;
         width: 60px;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 100;
     }
     
-  
+    header ul li a{
+        color: black;
+    }
+    
+    header ul:not(.two) li a:hover{
+        color:#197BFF;
+    }
+    
+    header ul.two a{
+        color: #868686;
+    }
+    
+    header ul li.btnone a:hover{
+        transition: all 0,3s;
+        color: #00c080dc;
+    }
     header ul li.btntwo a{
         color: white;
         background: #01CE87;
         border-radius: 5px;
         border: 1px solid #01CE87;
         transition: all 0,3s ;
-        padding: 5px 25px ; /*отступы от текста тип как рамка, ВСЕ В КОДЕ ПОСЧИТАНЫ ДЛЯ ОТЧЕТА ПРАВИЛЬНО*/
+        padding: 5px 10px ; /*отступы от текста тип как рамка, ВСЕ В КОДЕ ПОСЧИТАНЫ ДЛЯ ОТЧЕТА ПРАВИЛЬНО*/
     }
     header ul li.btntwo a:hover{
-        padding: 5px 25px ;
+        padding: 5px 10px ;
         background: rgb(211, 246, 238);
         color:#197BFF;
         border: 1px solid white;
     }
 
-    .hero h1{  /* форматирование заголовка*/
-        margin-top: 10px;
-        width: 192px;
-        font-size: 60px;
-        font-weight: 200;
-        line-height: 79.2px;
-        text-align: left;
-    }
-    .hero p{ /* форматирование текста под заголовком*/
-        color: #8A909A;
-        width: 192px;
-        margin-top: 20px;
-        font-size: 10px;
-        font-weight: 100;
-        line-height: 27px;
-        letter-spacing: 0.02em;
-        text-align: left;
-        }
-    
-    .logo3{ /* соединяю в стороку кнопку и просмотр видео, указываю ширину и отступ сверху*/
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 50px;
-        height: 30px;
-        margin-top: 50px;
-        }
-    
-    .hero--info .btn{ /*форматирую кнопку*/
-        width: 96px;
-        height: 30px;
-        border: 0; /* убираю огранку у кнопки*/
-        background: #197BFF;
-        color: white;
-        border-radius: 5px;
-        font-size: 16px;
-        font-weight: 700;
-        padding: 5px;
-    }
+
 }
