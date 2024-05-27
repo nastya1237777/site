@@ -1541,7 +1541,6 @@ margin-top: 24px;
         font-family: 'Edmondsans', sans-serif;                                      
         margin-bottom: 30px;
         display: flex;
-        padding: 10px 0;
         align-items: center;
     }
 
@@ -1560,15 +1559,15 @@ margin-top: 24px;
     }
     
     .text{  /* форматируем текст заголовка - размер, толщина длина итд*/
-        font-size: 10px;
-        font-weight: 100;
+        font-size: 8px;
+        font-weight: 50;
         width: 20px;
         color: rgb(0, 0, 0);
     }
     
     .conteiner .one{ /* форматируем заголовки шапки по длине размеру толщине, ставим авоматические отступы */
         width: 200px;
-        font-size: 10px;
+        font-size: 8px;
         font-weight: 100;
         margin: auto;
         display: flex;
@@ -1579,18 +1578,17 @@ margin-top: 24px;
         font-family: 'Edmondsans', sans-serif;  
         cursor: pointer;
         border: none;
-        font-size: 10px;
+        font-size: 8px;
         font-weight: 100;
-        line-height: 10px;
         text-align: left;
         color: #323232;
     }
     .first .select-box{
-        width: 30px;
+        width: 40px;
         gap: 10px;
     }
     .second .select-box{
-        width: 30px;
+        width: 40px;
         gap: 10px;   
     }
     
@@ -1618,14 +1616,16 @@ margin-top: 24px;
         transition: all 0,3s;
         color: #00c080dc;
     }
+
     header ul li.btntwo a{
         color: white;
         background: #01CE87;
         border-radius: 5px;
         border: 1px solid #01CE87;
         transition: all 0,3s ;
-        padding: 5px 10px ; /*отступы от текста тип как рамка, ВСЕ В КОДЕ ПОСЧИТАНЫ ДЛЯ ОТЧЕТА ПРАВИЛЬНО*/
+        padding: 5px 10px ; 
     }
+    
     header ul li.btntwo a:hover{
         padding: 5px 10px ;
         background: rgb(211, 246, 238);
@@ -1633,5 +1633,6 @@ margin-top: 24px;
         border: 1px solid white;
     }
 
+    
 
 }
