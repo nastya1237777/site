@@ -1540,57 +1540,112 @@ margin-top: 24px;
     .conteiner{
         width: 384px;
         margin: auto;
-        margin-left: 240px;
     }
-    .hero--info{      
-            /* указываю размещения текста на сайте*/
-            
-
-    font-family: 'Edmondsans', sans-serif;
-    margin-left: 240px;
-    width: 708px;
-    height: 447px;
-    margin-top: 60px;
+    .hero--info{     /* указываю размещения текста на сайте*/
+        font-family: 'Edmondsans', sans-serif;
+        width: 708px;
+        height: 447px;
+        margin-top: 60px;
+    }
+    header .logo{   /* задаю размеры логотипа */
+        width: 20px;
+        height: 18px;
+    }
+    
+    header ul{  /* превращаем шапку в блок*/
+        display: flex;
+    }
+    
+    .text{  /* форматируем текст заголовка - размер, толщина длина итд*/
+        font-size: 18px;
+        font-weight: 200;
+        width: 50px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .conteiner .one{ /* форматируем заголовки шапки по длине размеру толщине, ставим авоматические отступы */
+        width: 200px;
+        font-size: 12px;
+        font-weight: 100;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .conteiner .select-conteiner .select-box{
+        font-family: 'Edmondsans', sans-serif;  
+        cursor: pointer;
+        border: none;
+        font-size: 12px;
+        font-weight: 100;
+        line-height: 24px;
+        text-align: left;
+        color: #323232;
+    }
+   
+    
+    
+    .conteiner .two{  /*все также*/
+        float: right;
+        justify-content: space-between;
+        width: 60px;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    
+  
+    header ul li.btntwo a{
+        color: white;
+        background: #01CE87;
+        border-radius: 5px;
+        border: 1px solid #01CE87;
+        transition: all 0,3s ;
+        padding: 5px 25px ; /*отступы от текста тип как рамка, ВСЕ В КОДЕ ПОСЧИТАНЫ ДЛЯ ОТЧЕТА ПРАВИЛЬНО*/
+    }
+    header ul li.btntwo a:hover{
+        padding: 5px 25px ;
+        background: rgb(211, 246, 238);
+        color:#197BFF;
+        border: 1px solid white;
     }
 
     .hero h1{  /* форматирование заголовка*/
         margin-top: 10px;
-        width: 600px;
+        width: 192px;
         font-size: 60px;
-        font-weight: 600;
+        font-weight: 200;
         line-height: 79.2px;
         text-align: left;
     }
     .hero p{ /* форматирование текста под заголовком*/
         color: #8A909A;
-        width: 550px;
+        width: 192px;
         margin-top: 20px;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 10px;
+        font-weight: 100;
         line-height: 27px;
         letter-spacing: 0.02em;
         text-align: left;
         }
     
     .logo3{ /* соединяю в стороку кнопку и просмотр видео, указываю ширину и отступ сверху*/
-        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 349px;
-        height: 60px;
+        width: 50px;
+        height: 30px;
         margin-top: 50px;
         }
     
     .hero--info .btn{ /*форматирую кнопку*/
-        width: 220px;
-        height: 60px;
+        width: 96px;
+        height: 30px;
         border: 0; /* убираю огранку у кнопки*/
         background: #197BFF;
         color: white;
         border-radius: 5px;
         font-size: 16px;
         font-weight: 700;
-        padding: 15px;
+        padding: 5px;
     }
 }
